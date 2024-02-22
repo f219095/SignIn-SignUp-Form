@@ -9,7 +9,32 @@
 <body>
     <div class="Signup_box">
         <h1>Sign Up</h1> 
-        
+        <form id="signupForm">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Mujtaba" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Abid" required>
+            
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="6" required>
+            
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{4}-[0-9]{7}" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="mian@gmail.com" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="$1234A" required>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="$1234A" required>
+            
+            <button type="submit">Submit</button>
+            
+            <p>Already have an account? <a href="Signin.html">Sign in here</a></p>
+        </form>  
     </div>
     <script src="/Signup.js"></script>
 </body>
